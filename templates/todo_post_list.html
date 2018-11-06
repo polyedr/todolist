@@ -10,6 +10,8 @@ pan>
 </div>
 <div class="card-body">
 {{ todo_post.body }}
+{{ todo_post.priority }}
+{{ todo_post.is_ready }}
 </div>
 <div class="card-footer text-center text-muted">
 <a href="{% url 'todo_post_edit' todo_post.pk %}">Edit</a> |
@@ -24,5 +26,8 @@ pan>
 </div>
 <br />
 {% endfor %}
+<a href="{% url 'search' %}">To-do lits filters</a>
 {% endblock content %}
- 
+  
+
+

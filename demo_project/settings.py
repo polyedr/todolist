@@ -41,10 +41,11 @@ INSTALLED_APPS = [
     'allauth',
     'allauth.account',
     'allauth.socialaccount',
-    'allauth.socialaccount.providers.google',  
-    'users',    
+    'allauth.socialaccount.providers.google',
+    'users',
     'pages',
     'todo_posts',
+    'django_filters',
 ]
 
 AUTH_USER_MODEL = 'users.CustomUser'
@@ -64,7 +65,6 @@ ROOT_URLCONF = 'demo_project.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
         'APP_DIRS': True,
         'DIRS': [os.path.join(BASE_DIR, 'templates')],
         'OPTIONS': {

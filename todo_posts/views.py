@@ -16,6 +16,7 @@ class Todo_postListView(ListView):
         todo_post_list = models.Todo_post.objects.filter(author=self.request.user)
         return todo_post_list
 
+
 class Todo_postDetailView(DetailView):
     model = models.Todo_post
     template_name = 'todo_post_detail.html'
@@ -25,9 +26,9 @@ class Todo_postDetailView(DetailView):
 class Todo_postCreateView(LoginRequiredMixin, CreateView):
     model = models.Todo_post
     template_name = 'todo_post_new.html'
-    fields = ['title', 'body',]
+    fields = ['title', 'body', ]
     login_url = 'account_login'
-    
+
     def form_valid(self, form):
         form.instance.author = self.request.user
         return super().form_valid(form)
@@ -42,7 +43,6 @@ class Todo_postUpdateView(UpdateView):
 
 class Todo_postDeleteView(DeleteView):
     model = models.Todo_post
-    template_name = 'todo_post_delete.html'    
+    template_name = 'todo_post_delete.html'
     success_url = reverse_lazy('todo_post_list')
     login_url = 'account_login'
-

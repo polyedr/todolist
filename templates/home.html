@@ -1,0 +1,31 @@
+<!-- templates/home.html -->
+{% load socialaccount %}
+
+<h1>To-do lists</h1>
+{% if user.is_authenticated %}
+<p>Welcome {{ user.username }} !!!</p>
+<p><a href="{% url 'account_logout' %}">Log out</a>
+{% else %}
+<p><a href="{% url 'account_signup' %}">Sign Up</a></p>
+<p><a href="{% url 'account_login' %}">Log In </a></p>
+<p><a href="{% provider_login_url 'google' %}">Log In with Gmail</a></p>
+{% endif %}
+
+<h2>Message board</h2>
+<ul>
+{% for post in object_list %}
+<li>{{ post.text }}</li>
+{% endfor %}
+</ul>
+
+{% block title %}Home{% endblock %}
+{% block content %}
+<div class="jumbotron">
+<h1 class="display- ">Todo_list app</h1>
+<p class="lead">A Todo_list website built with Django.</p>
+<p class="lead">
+<a class="btn btn-primary btn-lg" href="{% url 'todo_post_list' %}" role="butt\
+on">View All Todo_posts</a>
+</p>
+</div>
+{% endblock %}

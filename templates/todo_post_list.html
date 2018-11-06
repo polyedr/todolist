@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% block title %}Todo_posts{% endblock %}
+{% block content %}
+{% for todo_post in object_list %}
+<div class="card">
+<div class="card-header">
+<span class="font-weight-bold">{{ todo_post.title }}</span> &middot;
+<span class="text-muted">by {{ todo_post.author }} | {{ todo_post.date }}</s\
+pan>
+</div>
+<div class="card-body">
+{{ todo_post.body }}
+</div>
+<div class="card-footer text-center text-muted">
+<a href="{% url 'todo_post_edit' todo_post.pk %}">Edit</a> |
+<a href="{% url 'todo_post_delete' todo_post.pk %}">Delete</a>
+{% for comment in todo_post.comments.all %}
+<p>
+<span class="font-weight-bold">{{ comment.author }} &middot;</span>
+{{ comment }}
+</p>
+{% endfor %}
+</div>
+</div>
+<br />
+{% endfor %}
+{% endblock content %}
+ 

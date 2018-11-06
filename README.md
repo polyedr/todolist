@@ -23,7 +23,7 @@ User accounts:
 * Superuser
 * admin
 * adminadmin
-*
+
 * User
 * info@poly-edr.ru
 * info

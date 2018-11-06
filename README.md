@@ -19,12 +19,21 @@ Python 3.4+
 You can create virtual environment first from the requirements.txt file. 
 After that, if necessary, you can check SQLite version of the project demo_project_sqlite.tar.gz
 
+User accounts:
+* admin
+* adminadmin
+
+* info@poly-edr.ru
+* info
+* @/./+/-/_
+
 ## Deployment
 
-1. Restore PostgreSQL database from dump
-2. Copy project files to server
-3. Deploy with NGINX and Gunicorn or UWSGI
-4. Check that you have Debug = False in settings.py
+1. Create PostgreSQL user and database
+2. Restore PostgreSQL database from dump, https://www.postgresql.org/docs/current/backup-dump.html
+3. Copy project files to server
+4. Deploy with NGINX and Gunicorn or UWSGI
+5. Check that you have Debug = False in settings.py
 
 ## Built With
 
@@ -39,5 +48,5 @@ See also the list of [contributors](https://github.com/your/project/contributors
 
 ## Acknowledgments
 
-* For all Django authors
+* Thanks for all Django authors
  

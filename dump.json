@@ -1,0 +1,296 @@
+[
+{
+    "model": "auth.group",
+    "fields": {
+        "name": "Superadmins",
+        "permissions": []
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "cow5llspaba8dqx4qgfbcboul2q01lmt",
+    "fields": {
+        "session_data": "OTE4MDRhOWY4MTNjOTE2YmE2NjI1YzA4MmU0MjQ2ODRlZGU3NDE5ZDp7Il9zZXNzaW9uX2V4cGlyeSI6MCwiX2F1dGhfdXNlcl9pZCI6IjEiLCJfYXV0aF91c2VyX2hhc2giOiJjYjg1NWVmNGI3YzAzMTcxZTY1NGI4OWViYjNjMzY3Y2U5NjhlOGExIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQifQ==",
+        "expire_date": "2018-11-20T13:50:19.868Z"
+    }
+},
+{
+    "model": "sites.site",
+    "fields": {
+        "domain": "example.com",
+        "name": "example.com"
+    }
+},
+{
+    "model": "users.customuser",
+    "fields": {
+        "password": "pbkdf2_sha256$100000$pj3IKkhWfdDY$pdSaXoR9dVP+pAL2UOmp9lcyjTm5+cjZcRZJC4bWNy8=",
+        "last_login": "2018-11-06T13:50:19.821Z",
+        "is_superuser": true,
+        "username": "admin",
+        "first_name": "",
+        "last_name": "",
+        "email": "",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2018-11-06T05:05:49.265Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "users.customuser",
+    "fields": {
+        "password": "pbkdf2_sha256$100000$4gwCj21X9z6z$zTb1rr2F7ijaFaetTkPGU+M5KU0fZIiqR4j5NxZA1fg=",
+        "last_login": "2018-11-06T06:56:40.514Z",
+        "is_superuser": false,
+        "username": "info",
+        "first_name": "",
+        "last_name": "",
+        "email": "info@poly-edr.ru",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2018-11-06T05:08:02.272Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "users.customuser",
+    "fields": {
+        "password": "pbkdf2_sha256$100000$38HsvIrspm15$cF6k5WYvjUyGndrN/pNDwrH8Ove7vUY3+fpJ7Ve57UU=",
+        "last_login": "2018-11-06T06:55:50.995Z",
+        "is_superuser": false,
+        "username": "spectrmn",
+        "first_name": "",
+        "last_name": "",
+        "email": "spectrmn@yandex.ru",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2018-11-06T06:52:14.935Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "todo_posts.todo_post",
+    "pk": 1,
+    "fields": {
+        "title": "Admin post 1 title",
+        "body": "Admin post 1 task",
+        "date": "2018-11-06T05:07:06.412Z",
+        "author": [
+            "admin"
+        ],
+        "priority": "M",
+        "is_ready": false
+    }
+},
+{
+    "model": "todo_posts.todo_post",
+    "pk": 2,
+    "fields": {
+        "title": "Admin post 2 title",
+        "body": "Admin post 2 task",
+        "date": "2018-11-06T05:07:20.814Z",
+        "author": [
+            "admin"
+        ],
+        "priority": "M",
+        "is_ready": false
+    }
+},
+{
+    "model": "todo_posts.todo_post",
+    "pk": 3,
+    "fields": {
+        "title": "Admin post 3 title",
+        "body": "Admin post 3 task",
+        "date": "2018-11-06T05:07:33.211Z",
+        "author": [
+            "admin"
+        ],
+        "priority": "M",
+        "is_ready": false
+    }
+},
+{
+    "model": "todo_posts.todo_post",
+    "pk": 4,
+    "fields": {
+        "title": "Info post 1 title",
+        "body": "Info post 1 task",
+        "date": "2018-11-06T05:08:35.542Z",
+        "author": [
+            "info"
+        ],
+        "priority": "H",
+        "is_ready": false
+    }
+},
+{
+    "model": "todo_posts.todo_post",
+    "pk": 5,
+    "fields": {
+        "title": "Info post 2 title",
+        "body": "Info post 2 task",
+        "date": "2018-11-06T05:08:48.309Z",
+        "author": [
+            "info"
+        ],
+        "priority": "M",
+        "is_ready": false
+    }
+},
+{
+    "model": "todo_posts.todo_post",
+    "pk": 6,
+    "fields": {
+        "title": "Info post 3 title",
+        "body": "Info post 3 task",
+        "date": "2018-11-06T05:09:04.004Z",
+        "author": [
+            "info"
+        ],
+        "priority": "M",
+        "is_ready": true
+    }
+},
+{
+    "model": "todo_posts.todo_post",
+    "pk": 7,
+    "fields": {
+        "title": "Spectrmn user post title 1",
+        "body": "Spectrmn user post 1",
+        "date": "2018-11-06T06:52:44.906Z",
+        "author": [
+            "spectrmn"
+        ],
+        "priority": "M",
+        "is_ready": false
+    }
+},
+{
+    "model": "todo_posts.todo_post",
+    "pk": 8,
+    "fields": {
+        "title": "Spectrmn user post title 2",
+        "body": "Spectrmn user post 2",
+        "date": "2018-11-06T06:53:14.025Z",
+        "author": [
+            "spectrmn"
+        ],
+        "priority": "M",
+        "is_ready": false
+    }
+},
+{
+    "model": "todo_posts.todo_post",
+    "pk": 9,
+    "fields": {
+        "title": "Spectrmn user post title 3",
+        "body": "Spectrmn user post 3",
+        "date": "2018-11-06T06:53:29.718Z",
+        "author": [
+            "spectrmn"
+        ],
+        "priority": "M",
+        "is_ready": false
+    }
+},
+{
+    "model": "todo_posts.comment",
+    "pk": 1,
+    "fields": {
+        "todo_post": 1,
+        "comment": "c1",
+        "author": [
+            "info"
+        ]
+    }
+},
+{
+    "model": "account.emailaddress",
+    "pk": 1,
+    "fields": {
+        "user": [
+            "info"
+        ],
+        "email": "info@poly-edr.ru",
+        "verified": false,
+        "primary": true
+    }
+},
+{
+    "model": "account.emailaddress",
+    "pk": 2,
+    "fields": {
+        "user": [
+            "spectrmn"
+        ],
+        "email": "spectrmn@yandex.ru",
+        "verified": false,
+        "primary": true
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1,
+    "fields": {
+        "action_time": "2018-11-06T05:17:55.297Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": null,
+        "object_id": "1",
+        "object_repr": "Admin post 1 title",
+        "action_flag": 2,
+        "change_message": "[{\"added\": {\"name\": \"comment\", \"object\": \"c1\"}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 2,
+    "fields": {
+        "action_time": "2018-11-06T05:18:52.357Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": null,
+        "object_id": "6",
+        "object_repr": "Info post 3 title",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"is_ready\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3,
+    "fields": {
+        "action_time": "2018-11-06T05:20:19.479Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": null,
+        "object_id": "4",
+        "object_repr": "Info post 1 title",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"priority\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 4,
+    "fields": {
+        "action_time": "2018-11-06T06:48:19.623Z",
+        "user": [
+            "admin"
+        ],
+        "content_type": null,
+        "object_id": "1",
+        "object_repr": "Superadmins",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+}
+]

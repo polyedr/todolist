@@ -12,6 +12,9 @@ class Todo_postListView(ListView):
     template_name = 'todo_post_list.html'
     login_url = 'account_login'
 
+    def get_queryset(self):
+        todo_post_list = models.Todo_post.objects.filter(author=self.request.user)
+        return todo_post_list
 
 class Todo_postDetailView(DetailView):
     model = models.Todo_post

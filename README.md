@@ -1,4 +1,4 @@
-# Project Title
+# To-do lists demo project
 
 To-do lists demo project. Users are not allowed to the admin pages. User can see only his own posts in to-do list. Filters are included. No theming, for example of theming, you can find the latest front end project ready here, https://github.com/polyedr/dpfiles
 
@@ -20,9 +20,11 @@ You can create virtual environment first from the requirements.txt file.
 After that, if necessary, you can check SQLite version of the project demo_project_sqlite.tar.gz
 
 User accounts:
+* Superuser
 * admin
 * adminadmin
-
+*
+* User
 * info@poly-edr.ru
 * info
 * @/./+/-/_
@@ -31,7 +33,7 @@ User accounts:
 
 1. Create PostgreSQL user and database
 2. Restore PostgreSQL database from dump, https://www.postgresql.org/docs/current/backup-dump.html
-3. Copy project files to server
+3. Copy project files to server. Set up allowed hosts in settings.py
 4. Deploy with NGINX and Gunicorn or UWSGI
 5. Check that you have Debug = False in settings.py
 
@@ -42,7 +44,7 @@ User accounts:
 
 ## Authors
 
-* **Ivan Ishchukov** - *demo project* - http://poly-edr.com/
+* **Ivan Ishchukov** - *web development* - http://poly-edr.com/
 
 See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
 
